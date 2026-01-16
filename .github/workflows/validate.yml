@@ -1,0 +1,46 @@
+name: Validate Repository
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  schedule:
+    # Run weekly on Mondays to check for expired entries
+    - cron: '0 0 * * 1'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+      
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+        
+    - name: Run validation script
+      run: |
+        python3 scripts/validate.py
+        
+    - name: Check for expired entries
+      id: expired
+      run: |
+        EXPIRED_COUNT=$(python3 scripts/validate.py 2>&1 | grep -oP 'Total expired entries: \K\d+' || echo "0")
+        echo "count=$EXPIRED_COUNT" >> $GITHUB_OUTPUT
+        
+    - name: Create issue for expired entries
+      if: steps.expired.outputs.count > 0
+      uses: actions/github-script@v6
+      with:
+        script: |
+          github.rest.issues.create({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            title: `⚠️ Found ${process.env.EXPIRED_COUNT} expired certification entries`,
+            body: `The validation script found expired entries in README.md. Please review and move them to Expired-Offers.md.\n\nRun: \`python3 scripts/validate.py\` to see details.`,
+            labels: ['maintenance', 'expired']
+          })

@@ -5,6 +5,14 @@ The recently expired offers are to be added on top of the table.
 
 | Technology | Provider | Description | Link | Expiration |
 | --- | --- | --- | --- | --- |
+| Azure | Pluralsight | Free subscription at Pluralsight for Microsoft Azure courses | [Link](https://www.pluralsight.com/partners/microsoft/azure) | 01-Jan-2025 |
+| ISC² | ISC² | Voucher 100%, Certified in Cybersecurity℠(CC) Exam Voucher: CC1M12312024 | [Link](https://www.isc2.org/landing/1mcc) | 31-Dec-2024 |
+| Cisco U | Cisco U | Understanding Cisco Cybersecurity Operations Fundamentals - CBROPS - 30 continuing education credits free | [Link](https://u.cisco.com/path/32) | 16-Nov-2023 |
+| OCI | Oracle | Oracle Cloud Infrastructure, Oracle Cloud Infrastructure, Oracle Cloud Infrastructure | [Link](https://education.oracle.com/oracle-oci-certification#oracle-cloud-infrastructure) | Sept 30, 2023 |
+| Kami | Kami | Free online training courses to build your Kami skills and grow as a leader in your professional learning community | [Link](https://www.kamiapp.com/certified/) | 31-Oct-2021 |
+| Microsoft | Microsoft | Build: Azure Developer Challenge | Learn how to design, build, test, and maintain cloud applications and services on Microsoft Azure. | [Link](https://docs.microsoft.com/en-us/learn/challenges?id=b1ac64ec-f0d3-45fa-beee-f230f9a75e81) | 21-Jun-2022 |
+| Exasol | Exasol | Free Exasol training courses and certifications (€150 value each). | [Link](https://www.exasol.com/portal/display/TRAINING/Exasol+Training+and+Certification) | 30-Jun-2020 |
+| Palo Alto Networks | Palo Alto Networks | Free certification exam coupon code upon completion of certification prep training during the event. | [Link](https://ignite.paloaltonetworks.com/) | 18-Nov-2020 |
 | Kyverno | Nirmata| Kyverno Fundamentals Certification | [Link](https://learn.nirmata.com/courses/kyverno-fundamentals-certification/) | Unknown |
 | Splunk | Splunk | Free "Splunk Certified Cybersecurity Defense Analyst" certification exams while in beta ($130 USD per attempt thereafter) | [Link](https://www.splunk.com/en_us/training/certification-track/splunk-certified-cybersecurity-defense-analyst.html) | October 2023 
 | OCI | Oracle | Oracle Cloud Infrastructure 2022 Foundations Associate | [Link](https://education.oracle.com/oracle-cloud-infrastructure-2022-foundations-associate/pexam_1Z0-1085-22) | retires on July 14, 2023 |
